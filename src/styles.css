@@ -1,0 +1,391 @@
+:root {
+  --blue: #0031B2;
+  --blue-dark: #001243;
+  --red: #FF244C;
+  --gray: #636363;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1110px;
+  width: 100%;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+.background-blue {
+  background-color: var(--blue-dark);
+}
+
+.background-blue .container {
+  min-height: auto;
+  padding-bottom: 5rem;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+}
+
+.logo strong {
+  margin-left: 1rem;
+  font-size: 4rem;
+  color: var(--red);
+}
+
+header {
+  width: 100%;
+
+  padding: 2rem 1rem .4rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gray)
+}
+
+header ul {
+  display: flex;
+  list-style: none;  
+}
+
+header ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header ul li + li {
+  margin-left: 1.6rem;
+}
+
+header .button-login {
+  font-weight: bold;
+  color: var(--gray);
+  text-decoration: none;
+}
+
+header .button-menu-hamburguer {
+  display: none;
+}
+
+header .button-login:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.welcome-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.welcome-container .call-to-action {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.welcome-container .call-to-action h2 {
+  font-size: 1rem;
+  color: var(--gray);
+  margin-bottom: 1.5rem;
+}
+
+.welcome-container .call-to-action p {
+  font-size: 2.6rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 1.5rem;
+}
+
+.button-call-to-action {
+  width: 253px;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--blue);
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: .4rem;
+  transition: .2s;
+}
+
+.button-call-to-action:hover {
+  filter: brightness(.8);
+} 
+
+.welcome-container .images-container {
+  display: flex;
+}
+
+.welcome-container .images-container > img:first-child {
+  align-self: flex-end;
+  margin-right: .4rem;
+}
+
+.service-container {
+  background-color: transparent;
+  color: #ffff;
+  text-align: center;
+}
+
+.service-container > p {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.service-container > h1 {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 1.5rem;
+}
+
+.service-card {
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 350px;
+  height: 210px;
+  border-radius: .4rem;
+  background-color: #FFF;
+}
+
+.service-card h1 {
+  color: var(--blue);
+  text-align: left;
+  margin-bottom: .4rem;
+}
+
+.service-card p {
+  color: var(--gray);
+  text-align: left;
+  padding-left: .6rem;
+}
+
+.service-card img {
+  width: 30px;
+  margin-top: 5px;
+}
+
+.service-card .check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem .6rem;
+  display: inline-block;
+  border-radius: 100%;
+  background-color: #DCE9E2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.service-card .check-icon img {
+  width: 20px;
+}
+
+.meet-the-conecta-saude > h1 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--blue);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+}
+
+.meet-the-conecta-saude .about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.meet-the-conecta-saude .about-us-container img {
+  width: 450px;
+}
+
+.meet-the-conecta-saude .about-us-container .about-us-description {
+  align-self: center;
+}
+
+.meet-the-conecta-saude .about-us-container .about-us-description > span{
+  font-weight: bold;
+  color: var(--blue);
+} 
+
+.meet-the-conecta-saude .about-us-container .about-us-description > h1{
+  width: 270px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #282828;
+  margin: 1rem 0;
+} 
+
+.meet-the-conecta-saude .about-us-container .about-us-description > p{
+  color: var(--gray);
+} 
+
+.contacts-container {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contacts-container .contacts {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.contacts-container .contacts > h1 {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #282828;
+}
+
+.contacts-container .contacts > span {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  color: var(--gray);
+}
+
+.contacts-container .contacts > span p {
+  margin-left: .8rem;
+}
+
+.contacts-container .contacts .button-contacts {
+  margin-top: 2rem;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #ffff;
+  align-items: center;
+}
+
+.footer .reserved-rights > p {
+  margin: 1rem 0;
+}
+
+.footer .social-medias {
+  justify-self: end;
+}
+
+.footer .social-medias img + img {
+  margin-left: 1.5rem;
+}
+
+@media (max-width: 850px) {
+  header ul {
+    display: none;
+  }
+
+  header .button-login {
+    display: none;
+  }
+
+  header .button-menu-hamburguer {
+    display: block;
+  }
+  
+  .welcome-container .images-container > img:first-child {
+    display: none;
+  }
+
+  .welcome-container .images-container {
+    justify-content: flex-end;
+  }
+
+  .services-list {
+    justify-items: center;
+  }
+
+  .meet-the-conecta-saude .about-us-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .meet-the-conecta-saude .about-us-container .about-us-description {
+    padding-top: 2rem;
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .meet-the-conecta-saude .about-us-container .about-us-description > h1 {
+    width: 100%;
+  }
+
+  .meet-the-conecta-saude .about-us-container img:first-child {
+    width: 80%;
+    min-width: 300px;
+  }
+
+  .contacts-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .contacts-container img:last-child {
+    width: 80%;
+    min-width: 320px;
+  }
+
+  .contacts-container .contacts {
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .contacts-container .contacts .button-contacts {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 720px) {
+ 
+  .welcome-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .call-to-action {
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+}
